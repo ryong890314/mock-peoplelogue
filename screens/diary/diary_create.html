@@ -25,10 +25,10 @@
 				</a>
 			</div>
 			<div class="title center">
-				<h1>일기쓰기</h1>
+				<h1>나만의 일기</h1>
 			</div>
 			<div class="right_button text">
-				<a href="./diary_list.html">
+				<a href="./diary_main.html">
 					<p>완료</p>
 				</a>
 			</div>
@@ -55,42 +55,36 @@
 
 							<div class="diary_box">
 								
-								<div class="diary_write">
-									<div class="title">
-										<input type="text" placeholder="제목"/>
+								<div class="diary_create">
+
+									<p class="create_setting">표지설정</p>
+
+									<div class="cover">
+
 									</div>
-									<div class="state">
+
+									<p class="create_setting">카테고리 이름</p>
+									<div class="title">
+										<input type="text" placeholder="일상일기"/>
+									</div>
+
+									<p class="create_setting">공개범위 설정</p>
+									<div class="open">
 										<ul>
-											<li><input type="date"></li>
-											<li>
-												<select name="weather">
-													<option value="">날씨</option>
-													<option value="맑음">맑음</option>
-													<option value="흐림">흐림</option>
-													<option value="비">비</option>
-													<option value="눈">눈</option>
-												</select>
-											</li>
-											<li>
-												<select name="mood">
-													<option value="">기분</option>
-													<option value="기쁨">기쁨</option>
-													<option value="행복">행복</option>
-													<option value="뿌듯">뿌듯</option>
-													<option value="피곤">피곤</option>
-													<option value="우울">우울</option>
-													<option value="불안">불안</option>
-													<option value="슬픔">슬픔</option>
-													<option value="화남">화남</option>
-												</select>
-											</li>
+											<li><i class="fas fa-globe-asia"></i></li>
+											<li><i class="fas fa-users"></i></li>
+											<li><i class="fas fa-lock"></i></li>
 										</ul>
 									</div>
-									<div class="image_import">
-										<input type="file">
+
+									<p class="create_setting">시작날짜</p>
+									<div class="start_date">
+										<input type="date">
 									</div>
-									<div class="content">
-										<input type="text" placeholder="내용"/>
+
+									<p class="create_setting">목표설정</p>
+									<div class="end_date">
+										<input type="date">
 									</div>
 
 								</div>
@@ -108,6 +102,7 @@
 	</section>
 		
 </div>
+
 <script src="../../images/script.js"></script>
 	
 </s_t3>
