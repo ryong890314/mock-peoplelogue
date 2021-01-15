@@ -28,11 +28,9 @@
 				<h1>일상일기</h1>
 			</div>
 			<div class="right_button">
-				<a href="#">
-					<i class="fas fa-search"></i>
-				</a>
+				<input type="checkbox" id="search_checkbox_id">
+				<label for="search_checkbox_id" type="checkbox"><i class="fas fa-search"></i></label>
 			</div>
-
 		</div>
 	</header>
 	
@@ -54,6 +52,13 @@
 						<div class="content_box">
 
 							<div class="diary_box">
+
+								<div class="search_bar" id="search_bar_id">
+									<div class="input">
+										<input type="text" class="search_input" placeholder="검색" autocomplete="off">
+										<span><i class="fas fa-search"></i></span>
+									</div>
+								</div>
 								
 								<div class="calendar_bar">
 									<div class="right_button">
@@ -191,6 +196,14 @@
 <script src="../../images/script.js"></script>
 
 <script type="text/javascript">
+
+	document.getElementById('search_checkbox_id').addEventListener("change", function() {
+		if (this.checked) {
+			document.getElementById("search_bar_id").style.display = "block";
+		} else {
+			document.getElementById("search_bar_id").style.display = "none";
+		}
+	});
 
 	document.getElementById('calendar_checkbox_id').addEventListener("change", function() {
 		if (this.checked) {

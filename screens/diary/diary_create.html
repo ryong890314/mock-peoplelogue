@@ -70,13 +70,28 @@
 
 									<p class="create_setting">공개범위 설정</p>
 									<div class="open">
+										<input type="radio" name="open_radio" id="open_radio_id_1">
+										<input type="radio" name="open_radio" id="open_radio_id_2">
+										<input type="radio" name="open_radio" id="open_radio_id_3">
 										<ul>
 											<li>
-												<p><i class="fas fa-globe-asia"></i></p>
-												<p>전체공개</p>
+												<label for="open_radio_id_1" type="radio">
+													<p><i class="fas fa-globe-asia"></i></p>
+													<p class="open_scoop">전체공개</p>
+												</label>
 											</li>
-											<li><i class="fas fa-users"></i></li>
-											<li><i class="fas fa-lock"></i></li>
+											<li>
+												<label for="open_radio_id_2" type="radio">
+													<p><i class="fas fa-users"></i></p>
+													<p class="open_scoop">이웃공개</p>
+												</label>
+											</li>
+											<li>
+												<label for="open_radio_id_3" type="radio">
+													<p><i class="fas fa-lock"></i></p>
+													<p class="open_scoop">비공개</p>
+												</label>
+											</li>
 										</ul>
 									</div>
 

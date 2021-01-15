@@ -94,10 +94,24 @@
 
 								<p class="emotion_count">감정표현 1,800</p>
 
+								<div class="emotion_add" id="emotion_add_id">
+									<span class="arrow"></span>
+									<div class="state">
+										<ul>
+											<li><img src="../../images/emotion_love.png"></li>
+											<li><img src="../../images/emotion_like.png"></li>
+											<li><img src="../../images/emotion_lol.png"></li>
+											<li><img src="../../images/emotion_wow.png"></li>
+											<li><img src="../../images/emotion_sad.png"></li>
+											<li><img src="../../images/emotion_angry.png"></li>
+										</ul>
+									</div>
+								</div>
+
 								<div class="emotion_bar">
 									<div class="left_button">
-										<label for="modal_button_id" type="button"><i class="fas fa-plus"></i></i></label>
-										<!-- <i class="fas fa-plus"></i> -->
+										<input type="checkbox" id="emotion_checkbox_id">
+										<label for="emotion_checkbox_id" type="checkbox"><i class="fas fa-plus"></i></i></label>
 									</div>
 									<div class="right_button">
 										<i class="fas fa-chevron-right right"></i>
@@ -130,23 +144,6 @@
 
 							</div>
 
-							<button class="trigger" id="modal_button_id">Click here to trigger the modal!</button>
-
-							<div class="modal">
-								<div class="modal-content">
-									<div class="state">
-										<ul>
-											<li><img src="../../images/emotion_love.png"></li>
-											<li><img src="../../images/emotion_like.png"></li>
-											<li><img src="../../images/emotion_lol.png"></li>
-											<li><img src="../../images/emotion_wow.png"></li>
-											<li><img src="../../images/emotion_sad.png"></li>
-											<li><img src="../../images/emotion_angry.png"></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-
 						</div>
 
 					</s_cover>
@@ -161,25 +158,13 @@
 <script src="../../images/script.js"></script>
 
 <script type="text/javascript">
-
-	   var modal = document.querySelector(".modal");
-    var trigger = document.querySelector(".trigger");
-    // var closeButton = document.querySelector(".close-button");
-
-    function toggleModal() {
-        modal.classList.toggle("show-modal");
-    }
-
-    function windowOnClick(event) {
-        if (event.target === modal) {
-            toggleModal();
-        }
-    }
-
-    trigger.addEventListener("click", toggleModal);
-    // closeButton.addEventListener("click", toggleModal);
-    window.addEventListener("click", windowOnClick);
-	
+	document.getElementById('emotion_checkbox_id').addEventListener("change", function() {
+		if (this.checked) {
+			document.getElementById("emotion_add_id").style.display = "block";
+		} else {
+			document.getElementById("emotion_add_id").style.display = "none";
+		}
+	});
 </script>
 	
 </s_t3>
