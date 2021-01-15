@@ -699,6 +699,14 @@ input[id="form_auto"] {
 	width: calc(100% - 160px);
 	border-left: none;
 }
+.content_box .diary_box .diary_write .state li:first-child input {
+	font-size: 14px;
+	border: 0;
+	outline: none;
+	width: 80%;
+	text-align: center;
+	font-family: 'NanumSquare', sans-serif;
+}
 .content_box .diary_box .diary_write .state li img{
 	height: 20px;
 	width: 20px;
@@ -941,18 +949,25 @@ input[id="form_auto"] {
 	font-size: 20px;
 	line-height: 20px;
 }
+.content_box .diary_box .diary_create .end_date,
 .content_box .diary_box .diary_create .start_date {
 	margin-bottom: 10px;
 	padding: 0 0 10px;
 	border-bottom: 1px solid #cccccc;
 	text-align: center;
 }
-.content_box .diary_box .diary_create .end_date {
-	margin-bottom: 10px;
-	padding: 0 0 10px;
-	border-bottom: 1px solid #cccccc;
+.content_box .diary_box .diary_create .end_date input,
+.content_box .diary_box .diary_create .start_date input {
+	color: #999999;
+	font-size: 20px;
+	font-weight: 800;
+	border: 0;
+	outline: none;
+	width: 100%;
 	text-align: center;
+	font-family: 'NanumSquare', sans-serif;
 }
+
 /** modal **/
 
 .modal {
