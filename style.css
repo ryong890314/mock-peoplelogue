@@ -1078,8 +1078,6 @@ input[id="form_auto"] {
 
 /** exdiary **/
 
-/** testmenu **/
-
 .content_box .exdiary_box .title {
 	margin-bottom: 20px;
 	padding: 20px 20px 0;
@@ -1286,6 +1284,141 @@ input[id="form_auto"] {
 	text-align: center;
 	display: inline-block;
 }
+
+/** exdiary_setting **/
+
+.content_box .exdiary_box .exdiary_setting {
+	margin-bottom: 20px;
+    padding: 20px 20px 0;
+}
+.content_box .exdiary_box .exdiary_setting .setting_type {
+	font-size: 14px;
+	margin-bottom: 5px;
+    color: #999999;
+}
+.content_box .exdiary_box .exdiary_setting .title {
+	margin-bottom: 10px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.content_box .exdiary_box .exdiary_setting .title input {
+	font-size: 20px;
+	font-weight: 800;
+	width: 100%;
+	border: none;
+	outline: none;
+}
+.content_box .exdiary_box .exdiary_setting .color {
+	margin-bottom: 10px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #cccccc;
+}
+.content_box .exdiary_box .exdiary_setting .color {
+	display: inline-block;
+	width: 100%;
+}
+.content_box .exdiary_box .exdiary_setting .color li{
+	margin: 10px 0;
+	float: left;
+	width: 20%;
+	text-align: center;
+	vertical-align: bottom;
+	box-sizing: border-box;
+	color: #999999;
+}
+.content_box .exdiary_box .exdiary_setting .color li:last-child {
+	border-right: none;
+}
+.content_box .exdiary_box .exdiary_setting .color li span {
+	margin-left: 5px;
+	line-height: 20px;
+}
+.content_box .exdiary_box .exdiary_setting .color .color_type {
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+}
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_5,
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_4,
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_3,
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_2,
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_1 {
+	display: none;
+}
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_5:checked ~ ul li:nth-child(5) .color_type,
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_4:checked ~ ul li:nth-child(4) .color_type,
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_3:checked ~ ul li:nth-child(3) .color_type,
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_2:checked ~ ul li:nth-child(2) .color_type,
+.content_box .exdiary_box .exdiary_setting .color #color_radio_id_1:checked ~ ul li:nth-child(1) .color_type {
+	border: 2px solid #666666;
+}
+
+.content_box .exdiary_box .exdiary_setting .end_date,
+.content_box .exdiary_box .exdiary_setting .start_date {
+	margin-bottom: 10px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #cccccc;
+	text-align: center;
+}
+.content_box .exdiary_box .exdiary_setting .end_date input,
+.content_box .exdiary_box .exdiary_setting .start_date input {
+	color: #999999;
+	font-size: 20px;
+	font-weight: 800;
+	border: 0;
+	outline: none;
+	width: 100%;
+	text-align: center;
+	font-family: 'NanumSquare', sans-serif;
+}
+.content_box .exdiary_box .user_bar {
+	padding-top: 20px;
+	display: inline-block;
+	height: 50px;
+	width: 100%;
+}
+.content_box .exdiary_box .user_bar .user_info {
+	padding: 5px;
+}
+.content_box .exdiary_box .user_bar .user_info .profile_img {
+	float: left;
+	margin-right: 5px;
+}
+.content_box .exdiary_box .user_bar .user_info .profile_img img {
+	height: 40px;
+	width: 40px;
+}
+.content_box .exdiary_box .user_bar .user_info .profile_info {
+	margin: 4px 0;
+	float: left;
+}
+.content_box .exdiary_box .user_bar .user_info .profile_info h1 {
+	font-size: 18px;
+	font-weight: 800;
+}
+.content_box .exdiary_box .user_bar .user_info .profile_info p {
+	font-size: 12px;
+	color: #999999;
+}
+.content_box .exdiary_box .user_bar .right_button {
+	float: right;
+	height: 20px;
+	width: 20px;
+	padding: 15px 20px;
+	text-align: center;
+}
+.content_box .exdiary_box .user_bar .right_button i {
+	font-size: 20px;
+	color:#999999;
+}
+#setting_checkbox_id {
+	display: none;
+}
+#setting_checkbox_id:checked ~  label i {
+	color: #015697;
+}
+
 /* select {
   -moz-appearance: none;
 	-webkit-appearance: none;
