@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
 <meta name="format-detection" content="telephone=no">
-<title>메인 | LAMPLE</title>
+<title>나만의 일기 | PeopleLogue</title>
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 <link rel="stylesheet" href="../../images/animate.css">
 <link rel="stylesheet" href="../../style.css">
@@ -20,9 +20,11 @@
 	<header id="header">
 		<div class="inner">
 			<div class="left_button">
-				<a href="./diary_list.html">
+				<input type="button" id="back_button_id" onclick="history.back()">
+										<label for="back_button_id" type="button"><i class="fas fa-chevron-left"></i></label>
+				<!-- <a href="./diary_list.html">
 					<i class="fas fa-chevron-left"></i>
-				</a>
+				</a> -->
 			</div>
 			<div class="title center">
 				<h1>일상일기</h1>
