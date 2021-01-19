@@ -47,8 +47,145 @@
 
 						<div class="content_box">
 
-							<div class="feed_box">
+							<div class="search_box">
+								<h1 class="search_title">카테고리</h1>
+								<ul class="category_ul">
+									<li class="category_li">
+										<a href="#">
+											<img src="../../images/category_daily.png">
+											<p>일상</p>
+										</a>
+									</li>
+									<li class="category_li">
+										<a href="#">
+											<img src="../../images/category_parenting.png">
+											<p>임신/육아</p>
+										</a>
+									</li>
+									<li class="category_li">
+										<a href="#">
+											<img src="../../images/category_pet.png">
+											<p>반려동물</p>
+										</a>
+									</li>
+									<li class="category_li">
+										<a href="#">
+											<img src="../../images/category_health.png">
+											<p>건강</p>
+										</a>
+									</li>
+									<li class="category_li">
+										<a href="#">
+											<img src="../../images/category_exercise.png">
+											<p>운동</p>
+										</a>
+									</li>
+									<li class="category_li">
+										<a href="#">
+											<img src="../../images/category_plant.png">
+											<p>식물</p>
+										</a>
+									</li>
+									<li class="category_li hidden" id="hidden_id_1">
+										<a href="#">
+											<img src="../../images/category_edu.png">
+											<p>교육</p>
+										</a>
+									</li>
+									<li class="category_li hidden" id="hidden_id_2">
+										<a href="#">
+											<img src="../../images/category_living.png">
+											<p>살림</p>
+										</a>
+									</li>
+								</ul>
 
+								<div class="category_more">
+									<input type="checkbox" id="category_more_id">
+									<label for="category_more_id" type="checkbox" id="category_more_label_id">펼치기</label>
+								</div>
+
+								<h1 class="search_title">추천글</h1>
+
+								<ul class="best_diary_ul">
+									<li class="best_diary_li">
+										<a href="../../screens/diary/diary_detail.html">
+											<div class="profile_img">
+												<img src="../../images/profile_img_man.png">
+											</div>
+											<div class="content">
+												<h1>홍길동</h1>
+												<p>본문을 분석하여<br>
+												생성된 제목입니다.</p>
+											</div>
+										</a>
+									</li>
+									<li class="best_diary_li">
+										<a href="../../screens/diary/diary_detail.html">
+											<div class="profile_img">
+												<img src="../../images/profile_img_man.png">
+											</div>
+											<div class="content">
+												<h1>김유신</h1>
+												<p>본문을 분석하여<br>
+												생성된 제목입니다.</p>
+											</div>
+										</a>
+									</li>
+									<li class="best_diary_li">
+										<a href="../../screens/diary/diary_detail.html">
+											<div class="profile_img">
+												<img src="../../images/profile_img_woman.png">
+											</div>
+											<div class="content">
+												<h1>유관순</h1>
+												<p>본문을 분석하여<br>
+												생성된 제목입니다.</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+
+								<h1 class="search_title">인기글</h1>
+
+								<ul class="best_diary_ul bottom">
+									<li class="best_diary_li">
+										<a href="../../screens/diary/diary_detail.html">
+											<div class="profile_img">
+												<img src="../../images/profile_img_man.png">
+											</div>
+											<div class="content">
+												<h1>홍길동</h1>
+												<p>본문을 분석하여<br>
+												생성된 제목입니다.</p>
+											</div>
+										</a>
+									</li>
+									<li class="best_diary_li">
+										<a href="../../screens/diary/diary_detail.html">
+											<div class="profile_img">
+												<img src="../../images/profile_img_man.png">
+											</div>
+											<div class="content">
+												<h1>김유신</h1>
+												<p>본문을 분석하여<br>
+												생성된 제목입니다.</p>
+											</div>
+										</a>
+									</li>
+									<li class="best_diary_li">
+										<a href="../../screens/diary/diary_detail.html">
+											<div class="profile_img">
+												<img src="../../images/profile_img_woman.png">
+											</div>
+											<div class="content">
+												<h1>유관순</h1>
+												<p>본문을 분석하여<br>
+												생성된 제목입니다.</p>
+											</div>
+										</a>
+									</li>
+								</ul>
 
 							</div>
 
@@ -72,12 +209,12 @@
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a>
 										<i class="fas fa-search select"></i>
 									</a>
 								</li>
 								<li>
-									<a href="#">
+									<a href="../more/more_main.html">
 										<i class="fas fa-ellipsis-h"></i>
 									</a>
 								</li>
@@ -95,6 +232,21 @@
 		
 </div>
 <script src="../../images/script.js"></script>
+
+<script>
+	document.getElementById('category_more_id').addEventListener("change", function() {
+		if (this.checked) {
+			document.getElementById("hidden_id_1").style.display = "inline-block";
+			document.getElementById("hidden_id_2").style.display = "inline-block";
+			document.getElementById("category_more_label_id").innerText = "접기";
+
+		} else {
+			document.getElementById("hidden_id_1").style.display = "none";
+			document.getElementById("hidden_id_2").style.display = "none";
+			document.getElementById("category_more_label_id").innerText = "펼치기";
+		}
+	});
+</script>
 
 </s_t3>
 </body>
